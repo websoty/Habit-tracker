@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Habits tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="head">
+              <div class="head__pre">
+                <img class="logo" src="/images/logo.svg" alt="logo" />
+                <h2 class="head__title">Привычки</h2>
+              </div>
+              <div class="head__tips">
+                <button class="reset__btn">Сбросить все отметки</button>
+                <span class="theme__color">Тема</span>
+                <button class="theme__switcher">
+                  <span class="theme__slider"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="progress">
+        <div class="container">
+          <div class="progress__inner">
+            <p class="progress__text">
+              Сегодня выполнено: <span id="completed-count">0</span> из
+              <span id="total-count">7</span>
+            </p>
+            <div class="progress__bar">
+              <div class="progress__bar-line"></div>
+            </div>
+            <ul class="progress__days">
+              <li class="progress__day">
+                <span class="progress__day-name">Пн</span>
+                <span class="progress__day-check"></span>
+              </li>
+              <li class="progress__day">
+                <span class="progress__day-name">Вт</span>
+                <span class="progress__day-check"></span>
+              </li>
+              <li class="progress__day">
+                <span class="progress__day-name">Ср</span>
+                <span class="progress__day-check"></span>
+              </li>
+              <li class="progress__day">
+                <span class="progress__day-name">Чт</span>
+                <span class="progress__day-check"></span>
+              </li>
+              <li class="progress__day">
+                <span class="progress__day-name">Пт</span>
+                <span class="progress__day-check"></span>
+              </li>
+              <li class="progress__day">
+                <span class="progress__day-name">Сб</span>
+                <span class="progress__day-check"></span>
+              </li>
+              <li class="progress__day">
+                <span class="progress__day-name">Вс</span>
+                <span class="progress__day-check"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="goals">
+        <div class="container">
+          <div class="goals__list">
+            <div class="goals__card">
+              <div class="goals__head">
+                <div class="goals__denotation">
+                  <img
+                    src="/images/sun.svg"
+                    alt="sun-morning-exercises"
+                    class="goals__img"
+                  />
+                  <h4 class="goals__title">Утренняя зарядка</h4>
+                </div>
+                <div class="goals__tip">
+                  <span class="goals__tip-score">0</span>
+                </div>
+              </div>
+              <ul class="goals__progress">
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__delete">
+                  <img src="/images/garbage.svg" alt="delete" />
+                </li>
+              </ul>
+            </div>
+            <div class="goals__card">
+              <div class="goals__head">
+                <div class="goals__denotation">
+                  <img
+                    src="/images/water.svg"
+                    alt="water-drink"
+                    class="goals__img"
+                  />
+                  <h4 class="goals__title">Пить воду</h4>
+                </div>
+                <div class="goals__tip">
+                  <span class="goals__tip-score">0</span>
+                </div>
+              </div>
+              <ul class="goals__progress">
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__delete">
+                  <img src="/images/garbage.svg" alt="delete" />
+                </li>
+              </ul>
+            </div>
+            <div class="goals__card">
+              <div class="goals__head">
+                <div class="goals__denotation">
+                  <img src="/images/study.svg" alt="Study" class="goals__img" />
+                  <h4 class="goals__title">Обучение</h4>
+                </div>
+                <div class="goals__tip">
+                  <span class="goals__tip-score">0</span>
+                </div>
+              </div>
+              <ul class="goals__progress">
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__delete">
+                  <img src="/images/garbage.svg" alt="delete" />
+                </li>
+              </ul>
+            </div>
+            <div class="goals__card">
+              <div class="goals__head">
+                <div class="goals__denotation">
+                  <img src="/images/sport.svg" alt="sport" class="goals__img" />
+                  <h4 class="goals__title">Активный отдых</h4>
+                </div>
+                <div class="goals__tip">
+                  <span class="goals__tip-score">0</span>
+                </div>
+              </div>
+              <ul class="goals__progress">
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__progress-list">
+                  <span class="goals__progress-check"></span>
+                </li>
+                <li class="goals__delete">
+                  <img src="/images/garbage.svg" alt="delete" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <button class="btn__newtask">Добавить новую задачу</button>
+      </div>
+    </div>
+
+    <div class="modal__overlay"></div>
+    <div class="modal">
+      <div class="modal__content">
+        <h2>Добавить задачу</h2>
+        <div class="modal__close">
+          <span></span>
+          <span></span>
+        </div>
+        <input class="modal__input" type="text" placeholder="Название..." />
+        <div class="modal__btns">
+          <button class="modal__btn close">Отменить</button>
+          <button class="modal__btn save">Сохранить</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

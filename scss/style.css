@@ -1,0 +1,173 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  color: #000;
+  font-family: 'Inter', Arial, sans-serif;
+  background: beige;
+  margin: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.app {
+  background-color: #fff;
+  min-height: 100vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 1024px;
+  margin: 40px auto;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+.header__inner {
+  background-color: #fff;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.head__title {
+  font-size: 30px;
+}
+.head__pre {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.head__tips {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.head__settings,
+.head__addsome {
+  object-fit: contain;
+  width: 32px;
+  height: 32px;
+  background-color: #f3eeee;
+  padding: 3px;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+.head__settings:hover,
+.head__addsome:hover {
+  background-color: #e0e0e0;
+}
+
+.progress {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px 0;
+}
+.progress__text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.progress__bar {
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.progress__bar-line {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  transition: width 0.6s ease;
+}
+.progress__days {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.progress__day {
+  font-size: 18px;
+}
+.progress__day-name {
+  color: #333;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+.progress__day-check {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.progress__day-check::after {
+  content: '✓';
+  transition: opacity 0.3s;
+  display: none;
+}
+
+.progress__day.active .progress__day-check {
+  background-color: #4caf50;
+}
+
+.progress__day.active .progress__day-check::after {
+  display: block;
+}
+
+.progress__day-check:hover {
+  background-color: #4caf50;
+  border-radius: 50%;
+  transform: scale(1.1);
+}

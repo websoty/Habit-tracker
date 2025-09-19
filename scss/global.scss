@@ -1,0 +1,58 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  color: #000;
+  font-family: 'Inter', Arial, sans-serif;
+  background: beige;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.app {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 1024px;
+  margin: 20px auto;
+  border-radius: 16px;
+  padding: 20px;
+}
+
